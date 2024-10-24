@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Icons with GitHub</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .icon-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .icon-container a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .icon-container a i {
+            font-size: 26px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .icon-container a:hover {
+            transform: scale(1.2) rotate(360deg);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .icon-container a.facebook:hover {
+            background-color: #1877f2;
+        }
+
+        .icon-container a.github:hover {
+            background-color: #333;
+        }
+
+        .icon-container a.instagram:hover {
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+        }
+
+        .icon-container a.linkedin:hover {
+            background-color: #0077b5;
+        }
+
+        .icon-container a.youtube:hover {
+            background-color: #FF0000;
+        }
+
+        .icon-container a:hover i {
+            color: #fff;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="icon-container">
+        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="github"><i class="fab fa-github"></i></a> <!-- GitHub icon -->
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+    </div>
+</body>
+</html>
